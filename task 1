@@ -1,0 +1,26 @@
+def addition(a,b):
+    return a+b
+def subtraction(a,b):
+    return a-b
+def multiplication(a,b):
+    return a*b
+def division(a,b):
+    return a/b
+print("Selection Operations")
+print("1.Addition\n"\
+      "2.Subtraction\n"\
+      "3.Multiplication\n"\
+      "4.Division\n")
+o=int(input("Enter choice of operation :"))
+a=int(input("Enter a number:"))
+b=int(input("Enter a number:"))
+if o==1:
+    print(a,"+",b,"=",addition(a,b))
+elif o==2:
+    print(a,"-",b,"=",subtraction(a,b))
+elif o==3:
+    print(a,"*",b,"=",multiplication(a,b))
+elif o==4:
+    print(a,"/",b,"=",division(a,b))
+else:
+    print("Invalid")
